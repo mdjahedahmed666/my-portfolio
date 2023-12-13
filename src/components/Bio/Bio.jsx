@@ -8,7 +8,7 @@ const Bio = () => {
       </div>
       <div className="p-10 mb-5">
         <h1 className="text-5xl font-bold">My Bio</h1>
-        <p className="py-6 text-lg">I’ve been passionating about front-end development since my college days, and now seeking a new challenge. I think my knowledge and skills in HTML, CSS, JavaScript, and React make me perfect for this role. As well as i have good knowledge of node js, Express js and next js. I’ve worked on the web development of projects during my bachelor's.</p>
+        <p className="py-6 text-lg">I have been passionating about front-end development since my college days, and now seeking a new challenge. I think my knowledge and skills in HTML, CSS, JavaScript, and React make me perfect for this role. As well as i have good knowledge of node js, Express js and next js. I’ve worked on the web development of projects during my bachelor's.</p>
     <div>
         <label>HTML5</label>
     <input type="range" min={0} max="100" value="95" className="range range-primary" />

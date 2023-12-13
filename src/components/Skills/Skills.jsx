@@ -6,7 +6,7 @@ const Skills = () => {
         <h2 className="text-4xl font-bold">Skills</h2>
         <p>Skills that I have got</p>
         </div>
-    <div className="grid grid-cols-4 gap-4 mt-10 pl-16 mx-10">
+    <div className="grid grid-cols-4 gap-4 my-10 pl-16 mx-10 py-5">
         <div className="w-2/4">
             <img src="https://cdn.pixabay.com/photo/2017/08/05/11/16/logo-2582748_960_720.png" alt="" />
         </div>

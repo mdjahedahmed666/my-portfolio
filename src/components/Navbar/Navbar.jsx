@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-
+import { MdEmail } from "react-icons/md";
 
 const Navbar = () => {
 
@@ -9,12 +9,15 @@ const Navbar = () => {
             <NavLink to="/">Home</NavLink>
         </li>
         <li className="text-lg">
+            <NavLink to="/project">Projects</NavLink>
+        </li>
+        <li className="text-lg">
             <NavLink to="/contact">Contact</NavLink>
         </li>
         </>
     )
   return (
-    <div className="navbar bg-base-900 shadow-sm">
+    <div className="navbar bg-zinc-200 shadow-sm px-10">
   <div className="navbar-start">
     <div className="dropdown">
       <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -31,9 +34,15 @@ const Navbar = () => {
       {navLinks}
     </ul>
   </div>
-  {/* <div className="navbar-end">
-    <a className="btn">Button</a>
-  </div> */}
+  <div className="navbar-end">
+    <div className="flex items-center">
+    <MdEmail className="text-4xl text-red-500"/>
+      <div>
+        <h4 className="font-medium text-lg">Email Me</h4>
+        <p className="font-bold">mdjahedahmed12@gmail.com</p>
+      </div>
+    </div>
+  </div>
 </div>
   )
 }

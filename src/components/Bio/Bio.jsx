@@ -1,5 +1,16 @@
 
 const Bio = () => {
+
+    const handleDownload = () => {
+      const downloadLink = document.createElement('a');
+      downloadLink.href = 'CVOfMdJahedMiahWebDev.pdf';
+      downloadLink.download = 'CVOfMdJahedMiahWebDev.pdf';
+      document.body.appendChild(downloadLink);
+      downloadLink.click();
+      document.body.removeChild(downloadLink);
+
+    };
+
   return (
     <div className="hero py-20 bg-base-600">
     <div className="hero-content">
@@ -25,7 +36,7 @@ const Bio = () => {
     </div>
     <div>
     <button className="btn btn-primary mr-2">Hire me</button>
-    <button className="btn btn-primary">Download CV</button>
+    <button className="btn btn-primary" onClick={handleDownload}>Download CV</button>
     </div>
       </div>
     </div>
